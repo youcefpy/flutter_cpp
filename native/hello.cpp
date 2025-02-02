@@ -1,5 +1,11 @@
 #include <iostream>
 
 extern "C" const char* helloFromCpp() {
-    return "Hello from C++!";
+    return "Hello world !!";
+}
+
+
+
+extern "C" int SumFunctionCpp(int a, int b) {
+    return a + b ; 
 }

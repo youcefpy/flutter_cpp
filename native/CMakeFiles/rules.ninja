@@ -7,14 +7,14 @@
 
 # =============================================================================
 # Project: hello_lib
-# Configurations: Release
+# Configurations: RelWithDebInfo
 # =============================================================================
 # =============================================================================
 
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__hello_unscanned_Release
+rule CXX_COMPILER__hello_unscanned_RelWithDebInfo
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\Users\t480\AppData\Local\Android\Sdk\ndk\25.1.8937393\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule CXX_COMPILER__hello_unscanned_Release
 #############################################
 # Rule for linking CXX shared library.
 
-rule CXX_SHARED_LIBRARY_LINKER__hello_Release
+rule CXX_SHARED_LIBRARY_LINKER__hello_RelWithDebInfo
   depfile = $DEP_FILE
   deps = gcc
   command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && C:\Users\t480\AppData\Local\Android\Sdk\ndk\25.1.8937393\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
@@ -44,7 +44,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\dev\projects\flutter_cpp\native -BC:\dev\projects\flutter_cpp\native\build
+  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\dev\projects\flutter_cpp\native -BC:\dev\projects\flutter_cpp\native
   description = Re-running CMake...
   generator = 1
 
