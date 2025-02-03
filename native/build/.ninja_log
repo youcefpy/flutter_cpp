@@ -1,3 +1,5 @@
 # ninja log v6
 7	1081	7602355131391625	CMakeFiles/hello.dir/hello.cpp.o	c904ef328010fcba
 1086	1267	7602355142180883	libhello.so	c8c9dacd13e51692
+16	1221	7602387607426431	CMakeFiles/qc_cpp.dir/hello.cpp.o	2b7b5e27c844c9fb
+1225	1451	7602387619512511	libqc_cpp.so	f2df536787426e0f

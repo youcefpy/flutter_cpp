@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'Flutter + C++',
+            ' Test Cpp with Flutter ',
           ),
         ),
         body: Column(
