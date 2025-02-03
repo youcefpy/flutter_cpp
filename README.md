@@ -28,6 +28,12 @@ cmake -G "Unix Makefiles" -DCMAKE_SYSTEM_NAME=Android \
 -DCMAKE_BUILD_TYPE=Release -B build
 
 ```
+Run Make After generating the build files, go inside the build/ directory:
+```bash
+cd build
+make
+```
+
 
 ## Integrate libhello.so into Flutter
 - Move the .so file to Flutter's JNI directory
